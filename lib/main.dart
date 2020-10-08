@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/tabs_screen.dart';
 import 'screens/category_meals_screen.dart';
 import 'screens/categories_screen.dart';
 import 'screens/meal_detail_screen.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
               )),
       initialRoute: '/', // default route
       routes: {
-        '/': (context) => CategoriesScreen(),
+        '/': (context) => TabsScreen(),
         CategoryMealsScreen.routeName: (context) =>
             CategoryMealsScreen(), // pakt de variabel vanuit de class.
         MealDetailScreen.routeName: (context) => MealDetailScreen(),
