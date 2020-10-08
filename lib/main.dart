@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screens/filters_screen.dart';
 import './screens/tabs_screen.dart';
 import 'screens/category_meals_screen.dart';
 import 'screens/categories_screen.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         CategoryMealsScreen.routeName: (context) =>
             CategoryMealsScreen(), // pakt de variabel vanuit de class.
         MealDetailScreen.routeName: (context) => MealDetailScreen(),
+        FiltersScreen.routeName: (context) => FiltersScreen(),
       },
       onGenerateRoute: (settings) {
         print(settings.arguments);
