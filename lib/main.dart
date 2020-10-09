@@ -7,7 +7,23 @@ import 'screens/meal_detail_screen.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  Map<String, bool> _filters = {
+    'gluten': false,
+    'vegetarian': false,
+    'vegan': false,
+    'lactose': false,
+  };
+
+  void _setFilters(Map<String, bool> filterData){
+    
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
